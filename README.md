@@ -1,18 +1,20 @@
-#SQL Music Store Analysis (Beginner Project)
+# SQL Music Store Analysis (Beginner Project)
 
-Analyze an online music store’s playlist database with SQL.
-You’ll explore the schema, load CSVs into PostgreSQL, and answer simple business questions about revenue, customers, and catalog performance.
+Analyze an online music store’s playlist database with SQL.  
+You’ll load CSVs into PostgreSQL and run simple queries to answer business questions.
 
-✨ What you’ll learn
+---
 
-Reading relational schemas & joining tables
+## Requirements
+- PostgreSQL 13+ (pgAdmin or `psql`)
+- CSV files: `artist.csv`, `album.csv`, `media_type.csv`, `genre.csv`, `track.csv`, `playlist.csv`, `playlist_track.csv`, `employee.csv`, `customer.csv`, `invoice.csv`, `invoice_line.csv`
 
-Aggregations (SUM, COUNT, AVG) and sorting
+---
 
-Window functions for “top-N per group” questions
+## Quickstart
 
-Turning business questions into reusable SQL
-
-🧰 Requirements
-
-PostgreSQL 13+ (pgAdmin or psql)
+### 1) Create a database (once)
+```bash
+createdb -U postgres -h localhost music_store
+# or inside psql:
+-- CREATE DATABASE music_store;
