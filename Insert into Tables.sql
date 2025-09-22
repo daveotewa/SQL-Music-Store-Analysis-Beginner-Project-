@@ -1,0 +1,11 @@
+\copy artist(artistid,name) FROM :'dir'/artist.csv WITH(FORMAT csv,HEADER true);
+\copy album(albumid,title,artistid) FROM :'dir'/album.csv WITH(FORMAT csv,HEADER true);
+\copy media_type(mediatypeid,name) FROM :'dir'/media_type.csv WITH(FORMAT csv,HEADER true);
+\copy genre(genreid,name) FROM :'dir'/genre.csv WITH(FORMAT csv,HEADER true);
+\copy track(trackid,name,albumid,mediatypeid,genreid,composer,milliseconds,bytes,unitprice) FROM :'dir'/track.csv WITH(FORMAT csv,HEADER true);
+\copy playlist(playlistid,name) FROM :'dir'/playlist.csv WITH(FORMAT csv,HEADER true);
+\copy playlist_track(playlistid,trackid) FROM :'dir'/playlist_track.csv WITH(FORMAT csv,HEADER true);
+\copy employee(employeeid,lastname,firstname,title,reportsto,birthdate,hiredate,address,city,state,country,postalcode,phone,fax,email) FROM :'dir'/employee.csv WITH(FORMAT csv,HEADER true);
+\copy customer(customerid,firstname,lastname,company,address,city,state,country,postalcode,phone,fax,email,supportrepid) FROM :'dir'/customer.csv WITH(FORMAT csv,HEADER true);
+\copy invoice(invoiceid,customerid,invoicedate,billingaddress,billingcity,billingstate,billingcountry,billingpostalcode,total) FROM :'dir'/invoice.csv WITH(FORMAT csv,HEADER true);
+\copy invoice_line(invoicelineid,invoiceid,trackid,unitprice,quantity) FROM :'dir'/invoice_line.csv WITH(FORMAT csv,HEADER true);
