@@ -18,6 +18,7 @@ You’ll load CSVs into PostgreSQL and run simple queries to answer business que
 createdb -U postgres -h localhost music_store
 # or inside psql:
 -- CREATE DATABASE music_store;
+```
 
 ### 2) Create Table
 
@@ -25,4 +26,4 @@ createdb -U postgres -h localhost music_store
 
 ### 3) Insert data into Tables
 
---Use the Insert ino Tables SQL 
+--Use the Insert into Tables SQL 
